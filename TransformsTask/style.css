@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    min-height:100vh;
+    overflow:hidden;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.alphacoders.com/136/1367490.jpeg")
+    center/cover no-repeat;
+}
+.child{
+    position:absolute;
+    overflow:hidden;
+    cursor:pointer;
+    border-radius:12px;
+    box-shadow:15px 15px 20px rgba(0,0,0,.6);
+    transition:transform .35s ease, box-shadow .35s ease;
+}
+.child:hover{
+    transform:rotate(45deg) scale(1.15);
+    z-index:999;
+    box-shadow:0 0 35px rgba(255,0,0,.8);
+}
+.child img{
+    position:absolute;
+    width:141%;
+    height:141%;
+    object-fit:cover;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+.child1{
+    width:12vw;
+    height:25vh;
+    background:#232439;
+    transform:rotate(45deg);
+    top:80px;
+    left:1140px;
+}
+.child2{
+    width:12vw;
+    height:25vh;
+    background:#36347c;
+    transform:rotate(45deg);
+    top:80px;
+    left:740px;
+}
+.child3{
+    width:19vw;
+    height:40vh;
+    background:#05071e;
+    transform:rotate(45deg);
+    top:210px;
+    left:890px;
+}
+.child4{
+    width:12vw;
+    height:25vh;
+    background:#a9a999;
+    transform:rotate(45deg);
+    top:450px;
+    left:745px;
+}
+.child5{
+    width:12vw;
+    height:25vh;
+    background:#da90d7;
+    transform:rotate(45deg);
+    top:470px;
+    left:1125px;
+}
+.hero-text{
+    position:absolute;
+    left:80px;
+    top:45%;
+    transform:translateY(-50%);
+    width:50%;
+    color:white;
+    z-index:10;
+}
+
+.hero-text h1{
+    margin:0;
+    font-size:60px;
+    font-weight:1000;
+    text-transform:uppercase;
+}
+
+.hero-text h2{
+    margin:10px 0;
+    font-size:60px;
+    color:#e62429;
+    text-transform:uppercase;
+}
